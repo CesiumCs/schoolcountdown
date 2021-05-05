@@ -12,5 +12,8 @@
     border-radius: 15px;
 }
 .normal {
-    font-size: large;
+    font-size: 1.5em;
+}
+#number {
+    font-size: 2em;
 }
