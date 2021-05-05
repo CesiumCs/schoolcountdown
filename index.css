@@ -1,0 +1,16 @@
+:root {
+    color: white;
+    background-color: #121314;
+    font-family: sans-serif;
+    width: 20em;
+    margin: auto;
+}
+.block {
+    background-color: #212223;
+    text-align: center;
+    padding: 1em;
+    border-radius: 15px;
+}
+.normal {
+    font-size: large;
+}
