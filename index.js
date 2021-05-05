@@ -11,11 +11,11 @@ Date.prototype.workingDaysFrom=function(fromDate){
     // reset time portion
     frD.setHours(0,0,0,0);
     toD.setHours(0,0,0,0);
-    
+
     while(frD<toD){
      frD.setDate(frD.getDate()+1);
      var day=frD.getDay();
-     if(day!=0&&day!=6){numOfWorkingDays++;}
+     if(day!=0&&day!=6&&frD.getDate()!=31){numOfWorkingDays++;}
     }
     return numOfWorkingDays;
    };
@@ -25,4 +25,7 @@ var endDate = new Date("Jun 4 2021");
 
 
 let number = endDate.workingDaysFrom(startDate)
+let numberMinusOne = endDate.workingDaysFrom(startDate)-1
+
 document.getElementById("number").innerHTML = number;
+document.getElementById("numberMinusOne").innerHTML = numberMinusOne;
