@@ -27,5 +27,10 @@ var endDate = new Date("Jun 4 2021");
 let number = endDate.workingDaysFrom(startDate)
 let numberMinusOne = endDate.workingDaysFrom(startDate)-1
 
-document.getElementById("number").innerHTML = number;
-document.getElementById("numberMinusOne").innerHTML = numberMinusOne;
+if (typeof document === 'undefined') {
+    console.log(`we're stuck here for ${number} more days`);
+    console.log(`or only ${numberMinusOne} if you dont count today!`);
+} else {
+    document.getElementById("number").innerHTML = number;
+    document.getElementById("numberMinusOne").innerHTML = numberMinusOne;
+}
