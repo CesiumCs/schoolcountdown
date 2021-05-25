@@ -2,3 +2,7 @@ this thing is bad and i cant be bothered to make it good because it doesnt matte
 
 the only holiday it counts is memorial day because thats the only one that exists
 between when i made this and when school ends
+
+docker because i can: 
+docker build -t countdown .
+docker run -p 8080:80 countdown
