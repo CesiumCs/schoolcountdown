@@ -31,7 +31,7 @@ if (typeof document === 'undefined') {
 } else {
   document.getElementById('number').innerHTML = number;
   var now = new Date();
-  var then = new Date(2021, 5, 4, 15, 40);
+  var then = new Date(2021, 5, 4, 11, 40);
   setInterval(function() {
     now = new Date();
     document.getElementById('seconds').innerHTML = Math.floor((then - now) / 1000);
